@@ -1,0 +1,475 @@
+{
+  "@context":
+  {
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "label": "http://www.w3.org/2000/01/rdf-schema#label",
+    "title": {
+      "@id": "http://purl.org/dc/elements/1.1/title",
+      "@type": "xsd:string",
+      "label": 
+      [
+          {
+             "@value": "Titel",
+             "@language": "de"
+          },
+          {
+             "@value": "title",
+             "@language": "en"
+          }
+      ]
+    },
+    "otherTitleInformation": {
+      "@id": "http://rdvocab.info/Elements/otherTitleInformation",
+      "@type": "xsd:string",
+      "label": 
+      [
+          {
+             "@value": "Titelzusatz",
+             "@language": "de"
+          },
+          {
+             "@value": "other title information",
+             "@language": "en"
+          }
+      ]
+    },
+    "uniformTitle": {
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "xsd:string",
+      "label": 
+      [
+          {
+             "@value": "Einheitstitel",
+             "@language": "de"
+          },
+          {
+             "@value": "uniform title",
+             "@language": "en"
+          }
+      ]
+    },
+    "shortTitle": {
+      "@id": "http://purl.org/ontology/bibo/shortTitle",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Kurztitel",
+             "@language": "de"
+          },
+          {
+             "@value": "short title",
+             "@language": "en"
+          }
+      ]
+    },
+    "parallelTitle": {
+      "@id": "http://purl.org/dc/terms/alternative",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Paralleltitel",
+             "@language": "de"
+          },
+          {
+             "@value": "parallel title",
+             "@language": "en"
+          }
+      ]
+    },
+
+    "author": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "@id",
+      "label": 
+      [
+          {
+             "@value": "Autor",
+             "@language": "de"
+          },
+          {
+             "@value": "Author",
+             "@language": "en"
+          }
+      ]
+    },
+    "authorName": {
+      "@id": "http://purl.org/dc/elements/1.1/creator",
+      "@type": "xsd:string",
+      "label": 
+      [
+          {
+             "@value": "Autor",
+             "@language": "de"
+          },
+          {
+             "@value": "Author",
+             "@language": "en"
+          }
+      ]
+    },
+    "contributor": {
+      "@id": "http://purl.org/dc/terms/contributor",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Beitragender",
+             "@language": "de"
+          },
+          {
+             "@value": "contributor",
+             "@language": "en"
+          }
+      ]
+    },
+    "contributorName": {
+      "@id": "http://purl.org/dc/elements/1.1/contributor",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Beitragender",
+             "@language": "de"
+          },
+          {
+             "@value": "contributor name",
+             "@language": "en"
+          }
+      ]
+    },
+    "publicationStatement": {
+      "@id": "http://rdvocab.info/Elements/publicationStatement",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Erscheinungsdaten",
+             "@language": "de"
+          },
+          {
+             "@value": "publication statement",
+             "@language": "en"
+          }
+      ]
+    },
+    "placeOfPublication": {
+      "@id": "http://rdvocab.info/Elements/placeOfPublication",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Erscheinungsort",
+             "@language": "de"
+          },
+          {
+             "@value": "place of publication",
+             "@language": "en"
+          }
+      ]
+    },
+    "publisher": {
+      "@id": "http://purl.org/dc/elements/1.1/publisher",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Verlag",
+             "@language": "de"
+          },
+          {
+             "@value": "publisher",
+             "@language": "en"
+          }
+      ]
+    },
+    "issued": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Erscheinungsjahr",
+             "@language": "de"
+          },
+          {
+             "@value": "date issued",
+             "@language": "en"
+          }
+      ]
+    },
+    "sameAs": {
+      "@id": "http://www.w3.org/2002/07/owl#sameAs",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Anderer Identifier",
+             "@language": "de"
+          },
+          {
+             "@value": "other identifier",
+             "@language": "en"
+          }
+      ]
+    },
+    "similarResource": {
+      "@id": "http://umbel.org/umbel#isLike",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Ähnliche Ressource",
+             "@language": "de"
+          },
+          {
+             "@value": "Similar Resource",
+             "@language": "en"
+          }
+      ]
+    },
+    "issn": {
+      "@id": "http://purl.org/ontology/bibo/issn",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "ISSN",
+             "@language": "de"
+          },
+          {
+             "@value": "ISSN",
+             "@language": "en"
+          }
+      ]
+    },
+    "eissn": {
+      "@id": "http://purl.org/ontology/bibo/eissn",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "EISSN",
+             "@language": "de"
+          },
+          {
+             "@value": "EISSN",
+             "@language": "en"
+          }
+      ]
+    },
+    "lccn": {
+      "@id": "http://purl.org/ontology/bibo/lccn",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "LCCN",
+             "@language": "de"
+          },
+          {
+             "@value": "LCCN",
+             "@language": "en"
+          }
+      ]
+    },
+    "oclcnum": {
+      "@id": "http://purl.org/ontology/bibo/oclcnum",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "OCLC number",
+             "@language": "de"
+          },
+          {
+             "@value": "OCLC number",
+             "@language": "en"
+          }
+      ]
+    },
+    "isbn": {
+      "@id": "http://purl.org/ontology/bibo/isbn",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "ISBN",
+             "@language": "de"
+          },
+          {
+             "@value": "ISBN",
+             "@language": "en"
+          }
+      ]
+    },
+    "medium": {
+      "@id": "http://purl.org/dc/terms/medium",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Trägermedium",
+             "@language": "de"
+          },
+          {
+             "@value": "physical carrier",
+             "@language": "en"
+          }
+      ]
+    },
+    "hasPart": {
+      "@id": "http://purl.org/dc/terms/hasPart",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Bestandteile",
+             "@language": "de"
+          },
+          {
+             "@value": "has part",
+             "@language": "en"
+          }
+      ]
+    },
+    "isPartOf": {
+      "@id": "http://purl.org/dc/terms/isPartOf",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Übergeordnetes Werk",
+             "@language": "de"
+          },
+          {
+             "@value": "is part of",
+             "@language": "en"
+          }
+      ]
+    },
+    "hasVersion": {
+      "@id": "http://purl.org/dc/terms/hasVersion",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Parallele Ausgabe",
+             "@language": "de"
+          },
+          {
+             "@value": "related resource",
+             "@language": "en"
+          }
+      ]
+    },
+    "isFormatOf": {
+      "@id": "http://purl.org/dc/terms/isFormatOf",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Parallele Ausgabe",
+             "@language": "de"
+          },
+          {
+             "@value": "related resource",
+             "@language": "en"
+          }
+      ]
+    },
+    "precededBy": {
+      "@id": "http://rdvocab.info/RDARelationshipsWEMI/precededBy",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Vorgänger",
+             "@language": "de"
+          },
+          {
+             "@value": "preceded by",
+             "@language": "en"
+          }
+      ]
+    },
+    "succeededBy": {
+      "@id": "http://rdvocab.info/RDARelationshipsWEMI/succeededBy",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Nachfolger",
+             "@language": "de"
+          },
+          {
+             "@value": "succeeded by",
+             "@language": "en"
+          }
+      ]
+    },
+    "language": {
+      "@id": "http://purl.org/dc/terms/language",
+      "@type": "@id",
+      "label":
+      [
+          {
+             "@value": "Sprache",
+             "@language": "de"
+          },
+          {
+             "@value": "language",
+             "@language": "en"
+          }
+      ]
+    },
+    "extent": {
+      "@id": "http://iflastandards.info/ns/isbd/elements/P1053",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Umfang",
+             "@language": "de"
+          },
+          {
+             "@value": "extent",
+             "@language": "en"
+          }
+      ]
+    },
+    "edition": {
+      "@id": "http://purl.org/ontology/bibo/edition",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Ausgabe",
+             "@language": "de"
+          },
+          {
+             "@value": "edition",
+             "@language": "en"
+          }
+      ]
+    },
+    "bibliographicCitation": {
+      "@id": "http://purl.org/dc/terms/bibliographicCitation",
+      "@type": "xsd:string",
+      "label":
+      [
+          {
+             "@value": "Zitation",
+             "@language": "de"
+          },
+          {
+             "@value": "bibliographic citation",
+             "@language": "en"
+          }
+      ]
+    }
+
+  }
+}
+
